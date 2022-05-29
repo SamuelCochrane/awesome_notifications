@@ -4,6 +4,7 @@ public enum NotificationLayout implements SafeEnum {
     Default("Default"),
     BigPicture("BigPicture"),
     BigText("BigText"),
+    Custom("Custom"),
     Inbox("Inbox"),
     ProgressBar("ProgressBar"),
     Messaging("Messaging"),
@@ -50,6 +51,9 @@ public enum NotificationLayout implements SafeEnum {
         }
         if (SafeEnum.charMatches(reference, stringLength, 0, 'p')){
             return ProgressBar;
+        }
+        if (SafeEnum.charMatches(reference, stringLength, 0, 'c')){
+            return Custom;
         }
         return null;
     }

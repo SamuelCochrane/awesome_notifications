@@ -4,6 +4,7 @@ enum NotificationLayout {
   Default,
   BigPicture,
   BigText,
+  Custom,
   Inbox,
   ProgressBar,
   Messaging,

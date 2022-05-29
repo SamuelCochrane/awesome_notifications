@@ -1036,6 +1036,10 @@ public class NotificationBuilder {
             case ProgressBar:
                 setProgressLayout(notificationModel, builder);
                 break;
+                
+            case Custom:
+                setProgressLayout(notificationModel, builder); //placeholder
+                break;
 
             case Default:
             default:
